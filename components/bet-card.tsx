@@ -205,7 +205,7 @@ export function BetCard({ site, rank }: BetCardProps) {
         {/* ── MOBILE ── */}
         <div className="md:hidden">
           <div className="flex items-stretch ">
-            <div className="w-37 shrink-0 flex items-center justify-center bg-black p-3">
+            <div className="w-38 shrink-0 flex items-center justify-center bg-black p-3">
               <div className="relative w-full h-20">
                 <Image src={site.logo || "/placeholder.svg"} alt={site.name} fill className="object-contain" />
               </div>
@@ -218,7 +218,7 @@ export function BetCard({ site, rank }: BetCardProps) {
             </div>
           </div>
 
-          <div className="flex items-center justify-between px-3 py-2 border-t border-border">
+          <div className="flex items-center justify-around px-3 py-2 border-t border-border">
             <div className="flex items-center gap-2">
               <div className="flex items-baseline gap-0.5">
                 <span className={cn("text-xl font-black", isTop ? "text-green-600" : "text-[#0d1621]")}>
