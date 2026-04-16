@@ -6,7 +6,8 @@
       "mcp__claude_ai_Vercel__list_deployments",
       "mcp__claude_ai_Vercel__get_deployment_build_logs",
       "Bash(python3 -c \"import json,sys; data=json.load\\(sys.stdin\\); logs=[e['text'] for item in data for e in json.loads\\(item['text']\\)['events']]; errors=[l for l in logs if 'error' in l.lower\\(\\) or 'Error' in l or 'failed' in l.lower\\(\\) or 'Failed' in l]; print\\('\\\\n'.join\\(errors[-50:]\\)\\)\")",
-      "Bash(npm show *)"
+      "Bash(npm show *)",
+      "Bash(pnpm build *)"
     ]
   }
 }
