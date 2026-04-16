@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function SiteHeader() {
   return (
@@ -12,7 +13,7 @@ export function SiteHeader() {
         </Link>
 
         <div className="flex items-center gap-2">
-          <Image  />
+          <Image src="/srij.svg" alt="18+" width={18} height={18}  />
           <span className="px-2.5 py-1 border border-white/20 text-[10px] font-black text-white/60">
             18+
           </span>

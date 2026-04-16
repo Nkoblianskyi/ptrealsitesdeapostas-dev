@@ -2,6 +2,7 @@
 
 import type { Dispatch, SetStateAction } from "react"
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 interface HeroSectionProps {
   setIsAgeModalOpen: Dispatch<SetStateAction<boolean>>
@@ -74,8 +75,8 @@ export function HeroSection({ setIsAgeModalOpen, setIsAdvertiserModalOpen }: Her
         {/* Trust strip */}
         <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 mt-6 md:mt-8">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-green-400" />
-            <span className="text-xs font-bold text-white/80 uppercase tracking-wider">SRIJ Licenciado</span>
+            <Image src="/flag.png" alt="18+" width={18} height={18} />
+            <span className="text-xs font-bold text-white/80 uppercase tracking-wider">Licenciado</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-[#e8c040]" />

@@ -2,7 +2,6 @@
 
 import { useCookieConsent } from "@/context/cookie-consent-context"
 import { Button } from "@/components/ui/button"
-import { Shield } from "lucide-react"
 import Link from "next/link"
 
 export function CookieBanner() {
@@ -17,9 +16,6 @@ export function CookieBanner() {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-7 h-7 rounded-md gradient-navy flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-4 h-4 text-white" />
-                </div>
                 <h3 className="text-base font-bold text-foreground">Política de Cookies</h3>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
