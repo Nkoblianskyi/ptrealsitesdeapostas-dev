@@ -62,12 +62,12 @@ export function HeroSection({ setIsAgeModalOpen, setIsAdvertiserModalOpen }: Her
 
         {/* Title */}
         <div className="text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-balance text-white uppercase">
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-balance text-white uppercase">
             Melhores Sites de{" "}
             <span className="text-[#e8c040]">Apostas</span>{" "}
             em Portugal
           </h1>
-          <p className="mt-4 text-sm md:text-base text-white/65 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-4 text-xs md:text-base text-white/65 max-w-2xl mx-auto leading-relaxed">
             Guia independente dos sites de apostas desportivas licenciados pelo SRIJ. Compare bónus, odds e avaliações reais para {currentYear}.
           </p>
         </div>

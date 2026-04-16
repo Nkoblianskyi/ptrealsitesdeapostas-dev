@@ -102,16 +102,6 @@ export function BetCard({ site, rank }: BetCardProps) {
         >
           #{rank} {getRankLabel(rank)}
         </div>
-        <div
-          className={cn(
-            "flex-1 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-widest border-b",
-            isTop
-              ? "bg-green-50 text-green-700 border-green-200"
-              : "bg-gray-50 text-gray-400 border-border",
-          )}
-        >
-          RANKING PTREALSITESDEAPOSTAS
-        </div>
       </div>
 
       <Link href={site.url} target="_blank" rel="noopener noreferrer sponsored" className="block">
@@ -214,15 +204,15 @@ export function BetCard({ site, rank }: BetCardProps) {
 
         {/* ── MOBILE ── */}
         <div className="md:hidden">
-          <div className="flex items-stretch">
-            <div className="w-20 shrink-0 flex items-center justify-center bg-black p-3">
-              <div className="relative w-full h-10">
+          <div className="flex items-stretch ">
+            <div className="w-37 shrink-0 flex items-center justify-center bg-black p-3">
+              <div className="relative w-full h-20">
                 <Image src={site.logo || "/placeholder.svg"} alt={site.name} fill className="object-contain" />
               </div>
             </div>
-            <div className="flex-1 flex flex-col justify-center px-3 py-2 gap-0.5">
-              <span className="text-[8px] font-semibold text-gray-400 uppercase tracking-wider">Bónus</span>
-              <p className={cn("text-sm font-black leading-tight", isTop ? "text-green-800" : "text-gray-900")}>
+            <div className="flex-1  flex flex-col items-center  px-3 py-2 gap-0.5">
+              <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Bónus</span>
+              <p className={cn("text-base text-center font-black leading-tight", isTop ? "text-green-800" : "text-gray-900")}>
                 {site.bonus}
               </p>
             </div>
